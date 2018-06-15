@@ -1,0 +1,18 @@
+h3 {
+  color: greenyellow;
+  font-size: 100px;
+  font-style: italic;
+}
+
+p {
+  background-color: chartreuse;
+}
+
+.enpinkify {
+  color: hotpink;
+  font-style: italic;
+}
+
+#boldlinky {
+  font-weight: bold;
+}
