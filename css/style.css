@@ -1,22 +1,52 @@
 h3 {
-  color: greenyellow;
-  font-size: 100px;
   font-style: italic;
 }
 
-p {
-  background-color: chartreuse;
+body {
+  margin: 0;
+}
+
+#navigation {
+  background-color: lightpink;
+}
+
+#navigation > ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+#navigation > ul > li {
+  margin: 0 10px 0 0;
+  display: inline;
+}
+
+#header {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#content {
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+#footer {
+  padding: 10px;
+  background-color: lightsalmon;
+}
+
+#footer > ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+#footer > ul > li {
+  margin: 0 10px 0 0;
+  display: inline;
 }
 
 #codeperson {
   color: red;
-}
-
-.enpinkify {
-  color: hotpink;
-  font-style: italic;
-}
-
-#boldlinky {
-  font-weight: bold;
 }
