@@ -8,6 +8,10 @@ p {
   background-color: chartreuse;
 }
 
+#codeperson {
+  color: red;
+}
+
 .enpinkify {
   color: hotpink;
   font-style: italic;
