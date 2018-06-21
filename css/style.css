@@ -6,8 +6,15 @@ body {
   margin: 0;
 }
 
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
 #navigation {
   background-color: lightpink;
+  position: fixed;
+  width: 100vw;
 }
 
 #navigation > ul {
@@ -16,9 +23,37 @@ body {
   list-style: none;
 }
 
-#navigation > ul > li {
+#navigation li {
   margin: 0 10px 0 0;
   display: inline;
+}
+
+#navigation .container {
+  margin: 0 auto;
+}
+
+#content p + ul {
+  background-color: hotpink;
+}
+
+#content li {
+  background-color: chartreuse;
+}
+
+#content li:first-child {
+  background-color: aqua;
+}
+
+#content li:nth-child(3n){
+  background-color: burlywood;
+}
+
+#content li:last-child {
+  background-color: purple;
+}
+
+#content li:nth-child(2){
+  background-color: red;
 }
 
 #header {
@@ -47,6 +82,16 @@ body {
   display: inline;
 }
 
+#footer .container {
+  margin: 0 auto;
+}
+
 #codeperson {
   color: red;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 760px;
+  width: 100%;
 }
