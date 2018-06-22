@@ -23,13 +23,30 @@ img {
   list-style: none;
 }
 
-#navigation li {
+#navigation > ul > li {
   margin: 0 10px 0 0;
   display: inline;
 }
 
 #navigation .container {
   margin: 0 auto;
+}
+
+#navigation li {
+  position: relative;
+}
+
+#navigation a + ul {
+  background-color: hotpink;
+  display: none;
+  left: -15px;
+  position: absolute;
+  top: 18px;
+}
+
+#navigation a:hover + ul,
+#navigation a + ul:hover {
+  display: block;
 }
 
 #content p + ul {
