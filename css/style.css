@@ -1,5 +1,6 @@
 h1 {
   font-family: 'Markazi Text', serif;
+  margin-top: 0;
 }
 
 h3 {
@@ -7,7 +8,14 @@ h3 {
 }
 
 body {
-  margin: 0;
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  grid-template-areas:
+    "navigation"
+    "header"
+    "content"
+    "footer";
+  min-height: 100vh;
 }
 
 img {
@@ -29,19 +37,17 @@ img {
 
 #navigation {
   background-color: lightpink;
-  position: fixed;
-  width: 100vw;
+  position: sticky;
+  top: 0;
 }
 
 #navigation > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
   padding: 10px;
   list-style: none;
-}
-
-#navigation > ul > li {
-  margin: 0 10px 0 0;
-  display: inline;
 }
 
 #navigation .container {
@@ -62,7 +68,8 @@ img {
 
 #navigation a:hover + ul,
 #navigation a + ul:hover {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 #content p + ul {
@@ -130,5 +137,24 @@ img {
 .container {
   margin: 0 auto;
   max-width: 760px;
-  width: 100%;
+}
+
+@media (min-width: 612px) {
+  body {
+    grid-template-columns: 150px auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas:
+      "navigation header"
+      "navigation content"
+      "navigation footer";
+  }
+
+  #navigation {
+    grid-area: navigation;
+  }
+
+  #navigation > ul {
+    flex-direction: column;
+    height: 50vh;
+  }
 }
