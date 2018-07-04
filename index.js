@@ -1,10 +1,16 @@
-var title = document.querySelector('h1');
+var greeting = document.querySelector('#greeting');
 
 var greetUser = function greetUser(){
-    var userName = prompt('What is your name?');
+    var firstName = prompt('What is your first name?');
+    var lastName = prompt('What is your last name?');
 
-    if(userName !== ''){
-        title.textContent += '. Welcome, ' + userName;
+    if(firstName && lastName){
+        greeting.innerHTML = `
+          <div>
+            <h3>Welcome to my world,</h3>
+            <h4>${firstName} ${lastName}</h4>
+          </div>
+        `;
     }
     else{
         greetUser();
