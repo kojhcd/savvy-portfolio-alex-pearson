@@ -7,17 +7,6 @@ h3 {
   font-style: italic;
 }
 
-body {
-  display: grid;
-  grid-template-rows: min-content min-content auto min-content;
-  grid-template-areas:
-    "navigation"
-    "header"
-    "content"
-    "footer";
-  min-height: 100vh;
-}
-
 img {
   width: 100%;
   max-width: 300px;
@@ -33,6 +22,17 @@ img {
 
 .fa-facebook {
   color: #3b5998;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  grid-template-areas:
+    "navigation"
+    "header"
+    "content"
+    "footer";
+  min-height: 100vh;
 }
 
 #navigation {
@@ -140,7 +140,7 @@ img {
 }
 
 @media (min-width: 612px) {
-  body {
+  #root {
     grid-template-columns: 150px auto;
     grid-template-rows: min-content auto min-content;
     grid-template-areas:

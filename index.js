@@ -12,7 +12,7 @@ var greetUser = function greetUser(){
     if(firstName && lastName){
         greeting.innerHTML = `
           <div>
-            <h3>Welcome to my world,</h3>
+            <h3>Welcome to my home page,</h3>
             <h4>${firstName} ${lastName}</h4>
           </div>
         `;
@@ -22,16 +22,13 @@ var greetUser = function greetUser(){
     }
 };
 
-var initialHTML = document.body.innerHTML;
-
 document
-    .body
+    .querySelector('#root')
     .innerHTML = `
     ${Navigation}
     ${Header}
     ${Content}
     ${Footer}
-    ${initialHTML}
   `;
 
 greetUser();
