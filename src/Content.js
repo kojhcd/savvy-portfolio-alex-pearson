@@ -1,7 +1,7 @@
 export default `
   <div id="content">
     <div class="container">
-      <p>Hi everyone! My name is Alex. I'm a web developer by day and programming instructor by night.</p>
+      <p>Hi everyone! My name is Gertrude. I'm a web developer by day and programming instructor by night.</p>
       <ul>
         <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem doloribus vero veniam. Modi nisi vero autem culpa ea quae sit similique esse nemo ipsum. Voluptatum explicabo repudiandae voluptates quidem ratione!</li>
         <li>Earum, nemo esse enim rerum incidunt sequi commodi assumenda tenetur quaerat vero eligendi, doloremque quia. Id sapiente nemo aperiam est quis voluptas laborum at, suscipit facilis harum? Accusantium, sit architecto?</li>

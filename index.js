@@ -4,7 +4,9 @@ import Header from './src/Header';
 import Navigation from './src/Navigation';
 
 
-var greetUser = function greetUser(){
+var title = 'Alex Pearson\'s Project';
+
+function greetUser(){
     var greeting = document.querySelector('#greeting');
     var firstName = prompt('What is your first name?');
     var lastName = prompt('What is your last name?');
@@ -20,13 +22,13 @@ var greetUser = function greetUser(){
     else{
         greetUser();
     }
-};
+}
 
 document
     .querySelector('#root')
     .innerHTML = `
     ${Navigation}
-    ${Header}
+    ${Header(title)}
     ${Content}
     ${Footer}
   `;
